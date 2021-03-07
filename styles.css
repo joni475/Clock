@@ -1,0 +1,95 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    font-weight: bold;
+    background: linear-gradient(to right,rgb(92, 207, 173), rgb(207, 142, 209))
+}
+.clock{
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 3px 3px 100px yellow;
+    
+}
+.hour{
+    width: 20px;
+    height:200px;
+    background-color: rgb(236, 236, 17);
+    margin: auto;
+    position: absolute;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    left: 48%;
+    bottom: 50%;
+}
+.minute {
+    height: 250px;
+    width: 5px;
+    background-color: red;
+    position: absolute;
+    left: 49%;
+    bottom: 50%;
+    padding: 0;
+    margin: 0;
+}
+.second {
+    width: 2px;
+    height: 280px;
+    background-color: rgb(13, 197, 13);
+    position: absolute;
+    left: 49%;
+    bottom: 50%;
+    
+}
+.dot {
+    height: 50px;
+    width: 50px;
+    box-shadow: inset 1px 5px 22px black;
+    position: absolute;
+    left: 46%;
+    bottom: 46%;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+}
+.hour,
+.minute,
+.second {
+    
+    transform-origin: bottom;
+    transition: transform .5s ease-in-out;
+    z-index: 2;
+}
+
+.one {
+    right: 45%;
+    margin-top: -15px;
+}
+.two {
+    right: 0%;
+    bottom: 43%;;
+}
+.three {
+    bottom: 0%;
+    right: 49%;
+    margin-bottom: -18px;
+}
+.four {
+    bottom: 45%;
+}
+.one, 
+.two,
+.three,
+.four {
+    font-size: 54px;
+    color: rgb(231, 228, 221);
+    position: absolute;
+}
