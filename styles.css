@@ -7,11 +7,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
     font-weight: bold;
-    background: linear-gradient(to right,rgb(92, 207, 173), rgb(207, 142, 209))
+    background: linear-gradient(to right,rgb(92, 207, 173), rgb(207, 142, 209));
 }
 .clock{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     margin: 50px auto;
     border-radius: 50%;
     position: relative;
@@ -21,16 +21,16 @@ body{
 .hour{
     width: 20px;
     height:200px;
+    left: 48%;
+    bottom: 50%;
     background-color: rgb(236, 236, 17);
     margin: auto;
     position: absolute;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    left: 48%;
-    bottom: 50%;
+    border-bottom-right-radius: 15px;  
 }
 .minute {
-    height: 250px;
+    height: 230px;
     width: 5px;
     background-color: red;
     position: absolute;
@@ -41,12 +41,11 @@ body{
 }
 .second {
     width: 2px;
-    height: 280px;
+    height: 240px;
     background-color: rgb(13, 197, 13);
     position: absolute;
     left: 49%;
     bottom: 50%;
-    
 }
 .dot {
     height: 50px;
@@ -93,3 +92,34 @@ body{
     color: rgb(231, 228, 221);
     position: absolute;
 }
+.gmt{
+    display: flex;
+    justify-content: center;
+}
+.gmt p{
+    font-weight: bold;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 0;
+    box-shadow: 3px 3px 33px rgb(253, 253, 16);
+}
+
+.digital {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.hr,
+.min,
+.sec {
+    width: 120px;
+    height: 80px;
+    border: 5px solid rgb(125, 143, 142);
+    font-size: 54px;
+    text-align: center;
+    box-shadow: 3px 3px 100px yellow;
+}
+

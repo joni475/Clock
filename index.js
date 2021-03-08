@@ -1,6 +1,9 @@
 let hour = document.querySelector(".hour");
 let minute = document.querySelector(".minute");
 let second = document.querySelector(".second");
+let hrDiv =  document.querySelector(".hr");
+let minDiv = document.querySelector(".min");
+let secDiv = document.querySelector(".sec")
 
  function clock(){
    let dates = new Date();
@@ -28,6 +31,10 @@ let second = document.querySelector(".second");
  
  second.textContent = `${sec}`;
  minute.textContent = `${min}`;
+
+ hrDiv.textContent = `${hr}`;
+ minDiv.textContent = `${min}`;
+ secDiv.textContent = `${sec}`;
  }
 
 setInterval(clock, 1000);
